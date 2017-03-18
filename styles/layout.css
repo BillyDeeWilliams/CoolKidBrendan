@@ -1,39 +1,51 @@
+/*Universal Rules*/
+/*
 .pull-left {
   float: left;
-}
+}*/
 
-.pull-right {
+/*.pull-right {
   float: right;
-}
+}*/
 
-.clearfix::after {
+
+/*.clearfix::after {
   content: "";
   display: table;
   clear: both;
-}
+}*/
 
-.heading-group-h1 {
+
+/*Mobile Styles--- Styles for Screens under 640px-----*/
+/*.heading-group{
+  display: block;
+  margin: 0, auto;
   max-width: 80%;
-}
+}*/
 
-#filters select {
+/*#filters select {
   width: 90%;
   margin: .2em 5%;
-}
+}*/
 
+
+/* Style Rules for screens 640px and Above ------ Tablet to Desktop ------ */
 @media only screen and (min-width: 640px) {
-  .heading-group-h1 {
-    padding: .1em .1em .1em 2em;
-    float: none;
-  }
 
+
+  /*.heading-group {
+    margin: 0 auto;
+    float: none;
+  }*/
+
+/*
   #filters select {
     width: 15em;
     margin: .2em .2em;
-  }
+  }*/
 
-  #filters li {
+  /*#filters li {
     width: 20em;
     display: inline;
-  }
+  }*/
 }
