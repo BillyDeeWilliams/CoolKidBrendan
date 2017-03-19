@@ -15,40 +15,60 @@
   <body>
     <header class="site-header clearfix">
       <section class="heading-group">
-        <img src="http://placehold.it/400x160?text=Cool+Kid+Bendan">
-        <h1>Comming Soon!</h1>
+        <div class="social">
+            <div class="icon-social"></div>
+            <ul>
+              <li class="collapsablie-social" ><a href="#" class="icon-facebook"></a></li>
+              <li class="collapsablie-social" ><a href="#" class="icon-twitter3"></a></li>
+              <li class="collapsablie-social" ><a href="#" class="icon-instagram"></a></li>
+              <li class="collapsablie-social" ><a href="#" class="icon-etsy"></a></li>
+              <li class="collapsablie-social" ><a href="#" class="icon-linkdIn"></a></li>
+            </ul>
+        </div>
+        <div class="main-logo">
+          <img src="http://placehold.it/400x160?text=Cool+Kid+Bendan">
+          <h1>Comming Soon!</h1>
+        </div>
+        <div class="icon-shopping-cart"></div>
       </section>
-      <nav class="main-nav">
-        <!-- Hamburger Menu -->
-        <div class="icon-menu"></div>
-        <ul>
-          <li class="tab" data-content="articles"><a href="#" class="icon-home">Home</a></li>
-          <li class="tab" data-content="about"><a href="#" class="icon-address-book">About (coming soon!)</a></li>
-          <li><a href="http://twitter.com/codefellowsSEA" target="_blank" class="icon-twitter3">Twitter</a></li>
-          <li><a href="http://github.com/" target="_blank" class="icon-github">Github</a></li>
-        </ul>
-      </nav>
     </header>
+    <nav class="main-nav">
+      <!-- Hamburger Menu -->
+      <div class="icon-menu"></div>
+      <ul>
+        <li class="tab" data-content="home"><a href="#" class="icon-home">Home</a></li>
+        <li class="tab" data-content="about"><a href="#" class="icon-address-book">About (coming soon!)</a></li>
+        <li class="tab" data-content="about"><a href="#" class="icon-">Shop (coming soon!)</a></li>
+        <li class="tab" data-content="about"><a href="#" class="icon-">Contact (coming soon!)</a></li>
+      </ul>
+    </nav>
       <main>
         <section id="portfolioThumbs">
             <ul>
-              <li><img src="http://placehold.it/120x120?text=projet+thumbnail"></li>
+              <li><a href="#"><img src="http://placehold.it/120x120?text=projet+thumb1" alt="thumbnail1"></a></li>
+              <li><a href="#"><img src="http://placehold.it/120x120?text=projet+thumb2" alt="thumbnail2"></a></li>
+              <li><a href="#"><img src="http://placehold.it/120x120?text=projet+thumb3" alt="thumbnail3"></a></li>
             </ul>
         </section>
         <section id="Project">
           <article class="projectTemplate">
             <header>
-              <h1>Project Title</h1>
+              <h1>{{ Project Title }}</h1>
               <img src="http://placehold.it/400x160?text=Project+Header+img">
               <div class="details">
-                For <em> AGENCY </em> <br>
-                published <time pubdate datetime="2000-01-01">Publish Time</time> <br>
+                For <a href="#" class="projectSponsor">{{ Company Name }}</a> <br>
+                published <time datetime="2000-01-01">{{Publish Date}}</time> <br>
                 <a href="#">Web Link to Project</a>
               </div>
             </header>
-          <section class="article-body"></section>
-        </article>
-      </section>
+            <section class="project-body">
+              <div class="about">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </section>
+          </article>
+        </section>
     </main>
     <footer>
       &copy; 2017 Site by William Madden | Cool Kid Brendan Graphic Design | <address><a href="brendanMulligan@gmail.com">Email Brendan</a></address>
