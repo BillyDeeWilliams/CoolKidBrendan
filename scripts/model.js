@@ -4,28 +4,29 @@ var articles = [];
 function Article (opts) {
   // TODO: DONE Use the object passed in to complete this constructor function:
   // Save ALL the properties of `opts` into `this`.
+  this.imageURL = opts.imageURL;
   this.title = opts.title;
-  this.category = opts.category;
-  this.author = opts.author;
-  this.authorUrl = opts.authorUrl;
+  this.keywords = opts.category;
+  this.employer = opts.employer;
+  this.employerUrl = opts.employerUrl;
+  this.liveUrl = opts.liveUrl;
   this.publishedOn = opts.publishedOn;
   this.body = opts.body;
 }
 
 Article.prototype.toHtml = function() {
-  var $newArticle = $('article.template').clone();
-  $newArticle.attr('data-category', this.category);
+  var $newArticle = $('article.projectTemplate').clone();
 
-  /* use jQuery to fill in current template clone with properties from particular Article instance.*/
-  $newArticle.find('a').html(this.author);
-  $newArticle.find('a').attr('href', this.authorUrl);
+  $newArticle.find('img').attr('src', this.imageURL);
   $newArticle.find('h1').html(this.title);
-  $newArticle.find('time[pubdate]').attr('title', this.publishedOn);
+  $newArticle.find('a.projectSponsor').html(this.employer);
+  $newArticle.find('a.projectSponsor').attr('href', this.employerUrl);
+
   $newArticle.find('time').html('about ' + parseInt((new Date() - new Date(this.publishedOn)) / 60 / 60 / 24 / 1000) + ' days ago');
-  $newArticle.find('section.article-body').html(this.body); //THIS BREAKS THE PAGE!!!!!!!
-  /* TODO: This clone article is no longer a template,
-  as it now has real data attached to it! We need to account
-  for that before this current article gets rendered to our
+  $newArticle.find('div.projectBody').html(this.body); //THIS BREAKS THE PAGE!!!!!!!
+  /*  This clone article is no longer a template,
+  as it now has real data attached to it. must account
+  for this before this current article gets rendered to
   DOM. */
   $newArticle.removeAttr('class');
 
