@@ -58,13 +58,13 @@
 
 /* Style Rules for screens 640px and Above ------ Tablet to Desktop ------ */
 @media only screen and (min-width: 640px) {
-  /*.icon-menu {
+  .icon-menu {
     display: none;
-  }*/
+  }
 
-  /*.main-nav {
+  .main-nav {
     padding: .2em .2em .2em 2em;
-  }*/
+  }
 
   /*.main-nav ul {
     display: block;

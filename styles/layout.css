@@ -1,19 +1,19 @@
 /*Universal Rules*/
-/*
+
 .pull-left {
   float: left;
-}*/
+}
 
-/*.pull-right {
+.pull-right {
   float: right;
-}*/
+}
 
 
-/*.clearfix::after {
+.clearfix::after {
   content: "";
   display: table;
   clear: both;
-}*/
+}
 
 
 /*Mobile Styles--- Styles for Screens under 640px-----*/
