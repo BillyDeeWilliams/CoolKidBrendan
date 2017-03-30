@@ -41,19 +41,19 @@
   padding: 0;
   list-style: none;
 }*/
-/*
-.template {
+
+.projectTemplate {
   display: none;
-}*/
+}
 
-/*.byline {
+.projectDetails {
   color: #777;
-}*/
+}
 
-/*.byline a {
+.projectDetails a {
   font-weight: bold;
   text-decoration: none;
-}*/
+}
 
 
 /* Style Rules for screens 640px and Above ------ Tablet to Desktop ------ */

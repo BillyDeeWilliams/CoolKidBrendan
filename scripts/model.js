@@ -23,7 +23,7 @@ Article.prototype.toHtml = function() {
   $newArticle.find('a.projectSponsor').attr('href', this.employerUrl);
 
   $newArticle.find('time').html('about ' + parseInt((new Date() - new Date(this.publishedOn)) / 60 / 60 / 24 / 1000) + ' days ago');
-  
+
   $newArticle.find('div.projectBody').html(this.body); //THIS BREAKS THE PAGE!!!!!!!
   /*  This clone article is no longer a template,
   as it now has real data attached to it. must account
@@ -43,5 +43,5 @@ ourLocalData.forEach(function(ele) {
 });
 
 articles.forEach(function(a) {
-  $('#articles').append(a.toHtml());
+  $('#projects').append(a.toHtml());
 });
